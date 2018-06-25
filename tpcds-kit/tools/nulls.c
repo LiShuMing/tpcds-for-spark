@@ -39,6 +39,8 @@
 #include "genrand.h"
 #include "tdefs.h"
 
+#define MAXINT INT_MAX
+
 /*
 * Routine: nullCheck(int nColumn)
 * Purpose: 

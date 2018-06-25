@@ -1,6 +1,6 @@
 use ${env:TPCDS_DBNAME};
 
--- use tpcds;
+use tpcds;
 set spark.sql.parquet.compression.codec=gzip;
 
 drop table if exists store;

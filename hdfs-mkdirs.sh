@@ -4,10 +4,9 @@ bin=`cd $bin;pwd`
 
 source $bin/tpcds-env.sh
 
-
-
 #mkdir the root dir of HDFS
 hadoop fs -test -e ${FLATFILE_HDFS_ROOT}
+
 if [ $? -eq 0 ] ;then
     echo 'exist'
 else
@@ -26,7 +25,6 @@ else
   hadoop fs -mkdir ${FLATFILE_HDFS_ROOT}/$table
 fi
 done
-
 
 echo "HDFS directories:"
 hadoop fs -ls ${FLATFILE_HDFS_ROOT}

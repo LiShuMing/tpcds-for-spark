@@ -54,6 +54,8 @@
 #include "tables.h"
 #include "streams.h"
 
+#define MAXINT INT_MAX
+
 static long Mult = 16807;       /* the multiplier */
 static long nQ = 127773;        /* the quotient MAXINT / Mult */
 static long nR = 2836;          /* the remainder MAXINT % Mult */
